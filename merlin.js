@@ -62,7 +62,7 @@ client.on("message", async message => {
             var random = Math.floor (Math.random() * (number)) + 1;
             switch (random) {
               case 1: message.channel.send ("Hewwo! <:fou:631864260900814877>"); break;
-              case 2: message.channel.send ("Hewwo! It's me, the dreamy sheep, Onii-san!"); break;
+              case 2: message.channel.send ("Hewwo! It's me, the dreamy sheep, Onii-san! 🐑"); break;
             }
            }
 });
