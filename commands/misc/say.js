@@ -11,7 +11,7 @@ module.exports = {
         if (!message.member.hasPermission("MANAGE_MESSAGES"))
             return message.reply("You don't have the required permissions to use this command.").then(m => m.delete(5000));
 
-        if (args.length < 0)
+        if (args.length < 1)
             return;
 
         const roleColor = message.guild.me.highestRole.hexColor;
