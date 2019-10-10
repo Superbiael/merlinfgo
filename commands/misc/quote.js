@@ -14,7 +14,7 @@ module.exports = {
            case 5: message.channel.send ("I'm called the Magus of Flowers because I like flowers. I don't even think I can make flowers bloom just by walking."); break;
            case 6: message.channel.send ("Am I good or evil? You are the one who decides that. I am simple - to humans who only go towards the future, I am like an unseedn fairy, aren't I?"); break;
            case 7: message.channel.send ("The painful struggle continues. But, well, a battle that isn’t painful isn’t a battle at all, only a task. It is good to think that even pain and suffering are important."); break;
-           case 8: message.channel.send ("My journey with you has grown quite long. In the beginning I lent you my help out of a bit of curiosity…… Now, you are an unforgettable existence to me. —My lord. May the flowers bless the path you journey."); break;
+           case 8: message.channel.send ("My journey with you has grown quite long. In the beginning I lent you my help out of a bit of curiosity…… \nNow, you are an unforgettable existence to me. \n—My lord. May the flowers bless the path you journey."); break;
            case 9: message.channel.send ("If you have so much free time, why not go out? At least, so long as your physical state permits."); break;
            case 10: message.channel.send ("Serving is a natural thing to me. After all, human spirit is nourishment for me."); break;
            case 11: message.channel.send ("You rely on me, and I raise you. Rather than fighting together with you, it is my policy to watch over* your fight. And the reward for that is…… Memories of our journey."); break;
