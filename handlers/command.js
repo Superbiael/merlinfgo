@@ -31,8 +31,8 @@ const { readdirSync } = require("fs");
 //         }
 //     });
     // Log the table
-    console.log(table.toString());
-}
+//     console.log(table.toString());
+// }
 
 /**
  * This is the basic command layout
