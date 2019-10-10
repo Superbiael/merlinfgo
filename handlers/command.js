@@ -29,7 +29,7 @@ const { readdirSync } = require("fs");
 //             // If there's an aliases key, read the aliases.
 //             if (pull.aliases && Array.isArray(pull.aliases)) pull.aliases.forEach(alias => client.aliases.set(alias, pull.name));
 //         }
-    });
+//     });
     // Log the table
     console.log(table.toString());
 }
