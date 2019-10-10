@@ -1,6 +1,6 @@
 const { readdirSync } = require("fs");
 
-const ascii = require("ascii-table");
+// const ascii = require("ascii-table");
 
 // Create a new Ascii table
 let table = new ascii("Commands");
