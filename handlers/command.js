@@ -2,7 +2,7 @@ const { readdirSync } = require("fs");
 
 const ascii = require("ascii-table");
 
-Create a new Ascii table
+// Create a new Ascii table
 let table = new ascii("Commands");
 table.setHeading("Command", "Load status");
 
