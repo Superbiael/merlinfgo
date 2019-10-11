@@ -1,7 +1,7 @@
 module.exports = {
     name: "fou",
     category: "misc",
-    description: "random fou out of 14 total images",
+    description: "random Fou image out of 14 images <:fou:631864260900814877>",
     run: async (client, message, args) => {
         number = 14;
         imageNumber = Math.floor (Math.random() * (number)) + 1;
