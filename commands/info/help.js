@@ -3,10 +3,8 @@ const { stripIndents } = require("common-tags");
 
 module.exports = {
     name: "help",
-    aliases: ["h"],
     category: "info",
     description: "Returns all commands, or one specific command info",
-    usage: "[command | alias]",
     run: async (client, message, args) => {
         // If there's an args found
         // Send the info of that command found
