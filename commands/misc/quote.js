@@ -4,7 +4,7 @@ module.exports = {
     category: "misc",
     description: "Sends a random quote... or a meme. | alias: q",
     run: async (client, message, args) => {
-        number = 22;
+        number = 23;
         var random = Math.floor (Math.random() * (number)) + 1;
         switch (random) {
            case 1: message.channel.send ("Hello, Chaldea's master. I am Merlin. People call me the Magus of Flowers. But you can just call me Merlin. I don't do well with formalities."); break;
