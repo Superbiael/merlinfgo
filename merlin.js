@@ -28,7 +28,7 @@ client.on("ready", () => {
         status: "online",
         game: {
             name: "owo",
-            type: "WATCHING"
+            type: "PLAYING"
         }
     });
 })
@@ -37,7 +37,7 @@ client.on("message", async message => {
     const prefix = "mer!";
     msg = message.content.toLowerCase();
 
-    if (message.author.bot) return;
+    // if (message.author.bot) return;
     if (!message.guild) return;
     // if (!message.content.startsWith(prefix)) return;
 
@@ -57,13 +57,19 @@ client.on("message", async message => {
     if (command)
         command.run(client, message, args);
 
+        // Commands that don't need a prefix
+
         if(msg.startsWith ("hewwo merwin")) {
             number = 2;
             var random = Math.floor (Math.random() * (number)) + 1;
             switch (random) {
               case 1: message.channel.send ("Hewwo! <:fou:631864260900814877>"); break;
-              case 2: message.channel.send ("Hewwo! It's me, the dreamy sheep, Onii-san! 🐑"); break;
+              case 2: message.channel.send ("Hewwo! It's me, the dreamy sheep, Onii-san!"); break;
             }
+           }
+
+           if(msg.startsWith ("oh merlin")) {
+            return message.channel.send ("I am he.");
            }
 });
 
