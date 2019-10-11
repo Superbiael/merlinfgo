@@ -28,11 +28,11 @@ module.exports = {
            case 19: message.channel.send ("Sorry I can't have fun with you all! I'm a little busy updating Magi☆Mari's website!"); break;
            case 20: message.channel.send ("Relax~ relax~!"); break;
            case 21: message.channel.send ("I'll bet all my chips on you, I'm counting on you~!"); break;
-           case 22: message.channel.send ("Are you tired? Then, rest well later and have a good dream."); break;
-           case 23: message.channel.send ("A place with no walls, no castles, no countries, the sky of the beginning. The primordial star shining from the earth. Let me show you where the soul resides― The Forever Sealed Utopia, Garden of Avalon!");break;
-           case 24: message.channel.send ("What~ I can do anything, you know!"); break;
-           case 25: message.channel.send ("I like the world of humans very much, but when it comes to each of them individually, I’m relatively, look, well, yeah!\nVery well, I suddenly feel that some things are better left unsaid!"); break;
-           case 26: message.channel.send ("Why I don't use incantations, you ask?\nEven though it's faster to just hit them?"); break;
+           case 22: message.channel.send ("A place with no walls, no castles, no countries, the sky of the beginning. The primordial star shining from the earth. Let me show you where the soul resides― The Forever Sealed Utopia, Garden of Avalon!");break;
+           case 23: message.channel.send ("What~ I can do anything, you know!"); break;
+           case 24: message.channel.send ("I like the world of humans very much, but when it comes to each of them individually, I’m relatively, look, well, yeah!\nVery well, I suddenly feel that some things are better left unsaid!"); break;
+           case 25: message.channel.send ("Why I don't use incantations, you ask?\nEven though it's faster to just hit them?"); break;
+           case 26: message.channel.send ("Don't panic, don't panic. You'll bite your tongue over the incantations."); break;
          }
         }
     }
