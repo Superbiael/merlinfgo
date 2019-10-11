@@ -35,6 +35,7 @@ client.on("ready", () => {
 
 client.on("message", async message => {
     const prefix = "mer!";
+    let chaldeaMas = (message.member.user.username)
     msg = message.content.toLowerCase();
 
     // if (message.author.bot) return;
@@ -60,13 +61,12 @@ client.on("message", async message => {
         // Commands that don't need a prefix
 
         if(msg.startsWith ("hewwo merwin")) {
-            let chaldeaMas = (message.member.user.username)
             number = 3;
             var random = Math.floor (Math.random() * (number)) + 1;
             switch (random) {
               case 1: message.channel.send ("Hewwo! <:fou:631864260900814877>"); break;
               case 2: message.channel.send ("Hewwo! It's me, the dreamy sheep, Onii-san!"); break;
-              case 3: message.channel.send ("Hewwo " + [chaldeaMas] + "! It is I, Merwin, everyone's trusted advisor.",); break;
+              case 3: message.channel.send ("Hewwo " + [chaldeaMas] + "-kun! It is I, Merwin, everyone's trusted advisor.",); break;
             }
            }
 
@@ -77,7 +77,13 @@ client.on("message", async message => {
            if(msg.startsWith (prefix + "hex")) {
                return message.channel.send ("#d96ddb");
            }
+           
+        //    Test Command
+           if(msg.startsWith (prefix + "test")) {
+            if(message.author.id != "182723698711592960") return;
 
+            return message.channel.send ("Hewwo " + [chaldeaMas] + "-kun! It is I, Merwin, everyone's twusted advisor.",);
+        }
 });
 
 
