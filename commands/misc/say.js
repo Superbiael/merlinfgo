@@ -3,13 +3,16 @@ const { RichEmbed } = require("discord.js");
 module.exports = {
     name: "say",
     category: "misc",
-    description: "Says your message via the bot",
-    usage: "mer!say <message>",
+    description: "Says your input via the bot",
+    usage: "mer!say <message> or mer!say embed <message>",
     run: (client, message, args) => {
         message.delete();
 
-        if (args.length < 1)
-            return;
+        if (!message.member.hasPermission("MANAGE_MESSAGES"))
+            return message.reply("You don't have the required permissions to use this command.").then(m => m.delete(5000));
+
+        if (args.length < 0)
+            return message.reply("Nothing to say?").then(m => m.delete(5000));
 
         const roleColor = message.guild.me.highestRole.hexColor;
 
