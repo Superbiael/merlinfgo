@@ -5,7 +5,7 @@ module.exports = {
     run: async (client, message, args) => {
         number = 14;
         imageNumber = Math.floor (Math.random() * (number)) + 1;
-        const msg = await message.channel.send ({files: ["./images/fou/" + imageNumber + ".png"]});
+        return message.channel.send ({files: ["./images/fou/" + imageNumber + ".png"]});
 
     }
 }
