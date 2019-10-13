@@ -1,6 +1,7 @@
 const { Client, Collection } = require("discord.js");
 const { config } = require("dotenv");
 const fs = require("fs");
+const prefix = "mer!";
 
 const client = new Client({
     disableEveryone: true
@@ -22,7 +23,7 @@ config({
 });
 
 client.on("ready", () => {
-    console.log(`${client.user.username} is now online!`);
+    console.log(`${client.user.username} is online in ${client.guilds.size} servers!`);
 
     client.user.setPresence({
         status: "online",
@@ -33,10 +34,9 @@ client.on("ready", () => {
     });
 })
 
-client.on("message", async message => {
-    const prefix = "mer!";
-    let chaldeaMas = (message.member.user.username) 
 
+client.on("message", async message => {
+    let chaldeaMas = (message.member.user.username) 
     msg = message.content.toLowerCase();
 
     // if (message.author.bot) return;
@@ -79,13 +79,23 @@ client.on("message", async message => {
             return message.channel.send ("I am he.");
            }
 
-           if(msg.startsWith (prefix + "hex")) {
-               return message.channel.send ("#d96ddb");
-           }
-           
+        if(msg.startsWith ("murder merlin fou")) {
+            number = 2;
+            var random = Math.floor (Math.random() * (number)) + 1;
+            switch (random) {
+              case 1: message.channel.send ("Dofouuuu!?"); break;
+              case 2: message.channel.send ("What are you doing, you feral beast!?"); break;
+          }
+        }
+
+           //Admin Commands
+        if(msg.startsWith (prefix + "hex")) {
+            return message.channel.send ("#d96ddb");
+        }
+        
         //    Test Command
-           if(msg.startsWith (prefix + "test")) {
-            return message.channel.send ("Don't panic, don't panic. You'll bite your tongue over the incantations.",);
+        if(msg.startsWith (prefix + "test")) {
+            return message.channel.send ("You can call me \"The Amazing Merlin the Great.\"")
         }
 });
 
