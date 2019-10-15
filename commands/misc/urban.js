@@ -9,7 +9,7 @@ module.exports = {
     usage: "`mer!urban random` or `mer!urban search <term>`",
 
     run: async (client, message, args) => {
-    if(!message.channel.nsfw) return message.channel.send("This command is restricted to nsfw channels");
+//     if(!message.channel.nsfw) return message.channel.send("This command is restricted to nsfw channels");
     
     if( args < 1 || !["random", "search"].includes(args[0])) return message.channel.send("usage: `mer!urban random` or `mer!urban search <term>`");
     let image = "http://cdn.marketplaceimages.windowsphone.com/v8/images/5c942bfe-6c90-45b0-8cd7-1f2129c6e319?imageType=ws_icon_medium";
