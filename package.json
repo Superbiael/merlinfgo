@@ -1,6 +1,6 @@
 {
   "name": "merlin",
-  "version": "1.0.1",
+  "version": "1.0.9",
   "description": "fgo",
   "main": "merlin.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "dotenv": "^8.1.0",
     "ms": "^2.1.2",
     "redis": "^2.8.0",
-    "snekfetch": "^4.0.4"
+    "snekfetch": "^4.0.4",
+    "urban": "^0.3.2"
   }
 }
