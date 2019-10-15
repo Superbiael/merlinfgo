@@ -28,16 +28,16 @@ client.on("ready", () => {
     client.user.setPresence({
         status: "online",
         game: {
-            name: "Fate Grand Order",
+            name: "Detective Fou-mes",
             type: "STREAMING"
         }
+        
     });
 })
 
-
 client.on("message", async message => {
-    let chaldeaMas = (message.member.user.username) 
     msg = message.content.toLowerCase();
+
 
     // if (message.author.bot) return;
     if (!message.guild) return;
@@ -58,7 +58,7 @@ client.on("message", async message => {
     // If a command is finally found, run the command
     if (command)
         command.run(client, message, args);
-
+        let chaldeaMas = (message.member.user.username) 
         // Commands that don't need a prefix
 
         if(msg.startsWith ("hewwo merwin")) {
@@ -69,15 +69,20 @@ client.on("message", async message => {
               case 2: message.channel.send ("Hewwo! It's me, the dreamy sheep, Onii-san!"); break;
               case 3: message.channel.send ("Hewwo " + [chaldeaMas] + "-kun! It is I, Merwin, everyone's trusted advisor.",); break;
             }
-           }
+        }
 
-           if(msg.startsWith ("good night merlin")) {
-            return message.channel.send ("Are you tired? Then, rest well and have a sweet dream~" +[chaldeaMas]);
+        if(msg.includes ("totally useless merlin")) {
+            return message.channel.send ("Well, I'm mostly just here to look pretty and, you know.");
+        }
+        
+        if(msg.startsWith ("good night merlin")) {
+            number = 2;
+            var random = Math.floor (Math.random() * (number)) + 1;
+            switch (random) {
+            case 1: message.channel.send ("Are you tired? Then, rest well and have a sweet dream~" +[chaldeaMas]); break;
+            case 2: message.channel.send ("Good night," + [chaldeaMas] + "-kun, sweet dreams. Humans need to have time to see beautiful dreams."); break;
            }
-
-           if(msg.startsWith ("oh merlin")) {
-            return message.channel.send ("I am he.");
-           }
+        }
 
         if(msg.startsWith ("murder merlin fou")) {
             number = 2;
@@ -88,15 +93,17 @@ client.on("message", async message => {
           }
         }
 
-           //Admin Commands
+        // Admin Commands
         if(msg.startsWith (prefix + "hex")) {
             return message.channel.send ("#d96ddb");
         }
         
-        //    Test Command
+        // Test Command
         if(msg.startsWith (prefix + "test")) {
-            return message.channel.send ("You can call me \"The Amazing Merlin the Great.\"")
+            return message.channel.send ("Good night, " + [chaldeaMas] + "-kun, sweet dreams. Humans need to have time to see beautiful dreams.");
+            
         }
+
 });
 
 client.login(process.env.TOKEN);
