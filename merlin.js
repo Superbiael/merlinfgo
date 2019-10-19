@@ -41,7 +41,7 @@ client.on("message", async message => {
 
     // if (message.author.bot) return;
     if (!message.guild) return;
-    // if (!message.content.startsWith(prefix)) return;
+    if (!message.content.startsWith(prefix)) return;
 
     // If message.member is uncached, cache it.
     if (!message.member) message.member = await message.guild.fetchMember(message);
@@ -59,6 +59,10 @@ client.on("message", async message => {
     if (command)
         command.run(client, message, args);
         let chaldeaMas = (message.member.user.username) 
+        
+});
+client.on("ready", () => {
+
         // Commands that don't need a prefix
 
         if(msg.startsWith ("hewwo merwin")) {
