@@ -61,7 +61,7 @@ client.on("message", async message => {
         let chaldeaMas = (message.member.user.username) 
         
 });
-client.on("ready", () => {
+client.on("message", async message => {
     msg = message.content.toLowerCase();
     let chaldeaMas = (message.member.user.username) 
         // Commands that don't need a prefix
