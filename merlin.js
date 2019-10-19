@@ -62,7 +62,7 @@ client.on("message", async message => {
         
 });
 client.on("ready", () => {
-
+    msg = message.content.toLowerCase();
         // Commands that don't need a prefix
 
         if(msg.startsWith ("hewwo merwin")) {
