@@ -3,6 +3,7 @@ const { stripIndents } = require("common-tags");
 
 module.exports = {
     name: "help",
+    aliases: ["h"],
     category: "info",
     description: "Returns all commands, or one specific command info",
     usage: "mer!help <command name>",
