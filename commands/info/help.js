@@ -3,10 +3,10 @@ const { stripIndents } = require("common-tags");
 
 module.exports = {
     name: "help",
-    aliases: ["h"],
+    aliases: ["commands", "info", "h"],
     category: "info",
-    description: "Returns all commands, or one specific command info",
-    usage: "mer!help <command name>",
+    description: "Returns all commands, or one specific command info | alias: h",
+    usage: "`mer!help` <command name>",
     run: async (client, message, args) => {
         // If there's an args found
         // Send the info of that command found
@@ -18,8 +18,7 @@ module.exports = {
             // Without the cmd info
             return getAll(client, message);
         }
-    }
-}
+    }}
 
 function getAll(client, message) {
     const embed = new RichEmbed()
@@ -30,7 +29,7 @@ function getAll(client, message) {
     const commands = (category) => {
         return client.commands
             .filter(cmd => cmd.category === category)
-            .map(cmd => `- \**${cmd.name}\** | ${cmd.description}`)
+            .map(cmd => `- \`${cmd.name}\` | ${cmd.description}`)
             .join("\n");
     }
 
