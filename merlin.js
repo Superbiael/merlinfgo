@@ -59,11 +59,12 @@ client.on("message", async message => {
     if (command)
         command.run(client, message, args);
         let chaldeaMas = (message.member.user.username) 
-        
-});
-client.on("message", async message => {
-    msg = message.content.toLowerCase();
-    let chaldeaMas = (message.member.user.username) 
+
+    });
+
+        client.on("message", async message => {
+            msg = message.content.toLowerCase();
+            let chaldeaMas = (message.member.user.username) 
         // Commands that don't need a prefix
 
         if(msg.startsWith ("hewwo merwin")) {
@@ -71,20 +72,20 @@ client.on("message", async message => {
             var random = Math.floor (Math.random() * (number)) + 1;
             switch (random) {
               case 1: message.channel.send ("Hewwo! <:fou:631864260900814877>"); break;
-              case 2: message.channel.send ("Hewwo! It's me, the dreamy sheep, Onii-san!"); break;
-              case 3: message.channel.send ("Hewwo " + [chaldeaMas] + "-kun! It is I, Merwin, everyone's trusted advisor.",); break;
+              case 2: message.channel.send ("Hewwo " + [chaldeaMas] + "! It's me, the dreamy sheep, Onii-san!"); break;
+              case 3: message.channel.send ("Hewwo " + [chaldeaMas] + "-kun! It is I, Merwin, everyone's twusted advisor.",); break;
             }
         }
 
         if(msg.includes ("totally useless merlin")) {
             return message.channel.send ("Well, I'm mostly just here to look pretty and, you know.");
         }
-        
+
         if(msg.startsWith ("good night merlin")) {
             number = 2;
             var random = Math.floor (Math.random() * (number)) + 1;
             switch (random) {
-            case 1: message.channel.send ("Are you tired? Then, rest well and have a sweet dream~" +[chaldeaMas]); break;
+            case 1: message.channel.send ("Are you tired, "+ [chaldeaMas] + "? Then, rest well and have a sweet dream~"); break;
             case 2: message.channel.send ("Good night," + [chaldeaMas] + "-kun, sweet dreams. Humans need to have time to see beautiful dreams."); break;
            }
         }
