@@ -27,7 +27,7 @@ module.exports = {
             .addField('Member information:', stripIndents`**> Display name:** ${member.displayName}
             **> Joined at:** ${joined}`, true)
 
-            .addField('User information:', stripIndents`**> ID:** ${member.user.id}
+            .addField('User information:', stripIndents`**> ID** ${member.user.id}
             **> Username**: ${member.user.username}`,true)
 
             // .setTimestamp()
