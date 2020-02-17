@@ -8,7 +8,7 @@ module.exports = {
             let embed = new Discord.RichEmbed()
             .setDescription("These commands are not cap-sensitive.")
             .setColor("#d96ddb")
-            .addField("Command phrases:", "`Hewwo Merwin` | `Oh Merlin` | `Good night Merlin` | `Murder Merlin Fou` ")
+            .addField("Command phrases:", "`Hewwo Merwin` | `Good night Merlin` | `Murder Merlin Fou` ")
             .setFooter("Some have multiple possible respones.");
 
             message.channel.send({embed: embed})
