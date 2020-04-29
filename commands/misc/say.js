@@ -1,6 +1,5 @@
 const { RichEmbed } = require("discord.js");
-   let merlinchannel = message.guild.channels.find(channel => channel.name === 'general');
-   if(!merlinchannel) return;
+
 
 module.exports = {
     name: "say",
@@ -10,6 +9,9 @@ module.exports = {
     run: (client, message, args) => {
         message.delete();
 //
+   let merlinchannel = message.guild.channels.find(channel => channel.name === 'general');
+   if(!merlinchannel) return;
+       
         if (args.length < 0)
             return message.reply("Nothing to say?").then(m => m.delete(5000));
 
