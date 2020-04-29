@@ -1,4 +1,6 @@
 const { RichEmbed } = require("discord.js");
+   let merlinchannel = message.guild.channels.find(channel => channel.name === 'general');
+   if(!merlinchannel) return;
 
 module.exports = {
     name: "say",
@@ -7,7 +9,7 @@ module.exports = {
     usage: "mer!say <message> or mer!say embed <message>",
     run: (client, message, args) => {
         message.delete();
-
+//
         if (args.length < 0)
             return message.reply("Nothing to say?").then(m => m.delete(5000));
 
@@ -18,9 +20,9 @@ module.exports = {
                 .setDescription(args.slice(1).join(" "))
                 .setColor(roleColor === "#000000" ? "#ffffff" : roleColor);
 
-            message.channel.send(embed);
+            message.merlinchannel.send(embed);
         } else {
-            message.channel.send(args.join(" "));
+            message.merlinchannel.send(args.join(" "));
         }
     }
 }
