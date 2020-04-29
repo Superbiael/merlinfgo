@@ -39,7 +39,7 @@ client.on("message", async message => {
     msg = message.content.toLowerCase();
 
 
-    // if (message.author.bot) return;
+    if (message.author.bot) return;
     if (!message.guild) return;
     if (!message.content.startsWith(prefix)) return;
 
@@ -58,8 +58,8 @@ client.on("message", async message => {
     // If a command is finally found, run the command
     if (command)
         command.run(client, message, args);
-        let chaldeaMas = (message.member.user.username) 
 
+        let chaldeaMas = (message.member.user.username) 
     });
 
         client.on("message", async message => {
@@ -99,15 +99,19 @@ client.on("message", async message => {
           }
         }
 
-        // Admin Commands
         if(msg.startsWith (prefix + "hex")) {
             return message.channel.send ("#d96ddb");
         }
         
         // Test Command
         if(msg.startsWith (prefix + "test")) {
+            if(message.author.id != "182723698711592960") return;
             return message.channel.send ("Good night, " + [chaldeaMas] + "-kun, sweet dreams. Humans need to have time to see beautiful dreams.");
-            
+        }
+
+        if(msg.startsWith ("pspspsps")) {
+            if(message.author.id != "182723698711592960") return;
+            return message.channel.send ("owo");
         }
 
 });
