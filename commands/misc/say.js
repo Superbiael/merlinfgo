@@ -1,6 +1,5 @@
 const { RichEmbed } = require("discord.js");
 
-
 module.exports = {
     name: "say",
     category: "misc",
@@ -8,7 +7,7 @@ module.exports = {
     usage: "mer!say <message> or mer!say embed <message>",
     run: (client, message, args) => {
         message.delete();
-       
+
         if (args.length < 0)
             return message.reply("Nothing to say?").then(m => m.delete(5000));
 
