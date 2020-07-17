@@ -7,6 +7,7 @@ module.exports = {
 
         let botschannel = message.guild.channels.find(channel => channel.name === 'general');
         if(!botschannel) return;
+        if(message.author.id != "182723698711592960") return;
 
         if (args.length < 0)
             return message.reply("Nothing to say?").then(m => m.delete(5000));
