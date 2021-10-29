@@ -21,7 +21,7 @@ module.exports = {
            case 12: message.channel.send ("Things I like? Humans, pranks, and girls, ya’know? Aren’t they fun? Playing with them, I mean."); break
            case 13: message.channel.send ("Things I dislike…… Nothing in particular, but if I had to say something, I guess it’d be Grand Caster. Then again that also includes myself so there’s that. Well, I want you to guess."); break;
            case 14: message.channel.send ("So long as humans dream, so long as their wishes continue to grow, the Holy Grail will come into existence. That isn’t bad in of itself. The problem is that dreams of any age…… They’re far bigger than reality."); break;
-           case 15: message.channel.send ("Are you enjoying the casino? \nThen, that's great! The substance your brain secretes when you gamble is very stimulating. It's vibrant yet simple, much like the feeling of liberation while free falling. \nIs this what they call a \"thrill\"? For me, it's like alcohol. Though it's not gratitude for some future day, I'd like for you to steadily exude it more!"); break;
+           case 15: message.channel.send ("Sorry for being so useless~"); break;
            case 16: message.channel.send ("Oh my, it seems something unusual is happening. Yet again, it seems to be visitors from another world. How come this isn’t an event where only cute girls come to play?"); break;
            case 17: message.channel.send ("It's me, the dreamy sheep Onii-san~☆"); break;
            case 18: message.channel.send ("Sorry I can't have fun with you all! I'm a little busy updating Magi☆Mari's website!"); break;
