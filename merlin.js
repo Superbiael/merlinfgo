@@ -78,8 +78,8 @@ client.on("message", async message => {
             number = 2;
             var random = Math.floor (Math.random() * (number)) + 1;
             switch (random) {
-            case 1: message.channel.send ("Are you tired, "+ [chaldeaMas] + "? Then, rest well and have a sweet dream~"); break;
-            case 2: message.channel.send ("Good night," + [chaldeaMas] + "-kun, sweet dreams. Humans need to have time to see beautiful dreams."); break;
+            case 1: message.channel.send ("Are you tired? Then, rest well and have a sweet dream~"); break;
+            case 2: message.channel.send ("Good night, sweet dreams. Humans need to have time to see beautiful dreams."); break;
            }
         }
 
