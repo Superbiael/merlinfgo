@@ -43,7 +43,6 @@ client.on("message", async message => {
     if (!message.guild) return;
     if (!message.content.startsWith(prefix)) return;
 
-    // If message.member is uncached, cache it.
     if (!message.member) message.member = await message.guild.fetchMember(message);
 
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
@@ -64,7 +63,6 @@ client.on("message", async message => {
 
         client.on("message", async message => {
             msg = message.content.toLowerCase();
-            let chaldeaMas = (message.member.user.username) 
         // Commands that don't need a prefix
 
         if(msg.startsWith ("hewwo merwin")) {
@@ -72,13 +70,9 @@ client.on("message", async message => {
             var random = Math.floor (Math.random() * (number)) + 1;
             switch (random) {
               case 1: message.channel.send ("Hewwo! <:fou:631864260900814877>"); break;
-              case 2: message.channel.send ("Hewwo " + [chaldeaMas] + "! It's me, the dreamy sheep, Onii-san!"); break;
-              case 3: message.channel.send ("Hewwo " + [chaldeaMas] + "-kun! It is I, Merwin, everyone's twusted advisor.",); break;
+              case 2: message.channel.send ("Hewwo! It's me, the dreamy sheep, Onii-san!"); break;
+              case 3: message.channel.send ("Hewwo! It is I, Merwin, everyone's twusted advisor.",); break;
             }
-        }
-
-        if(msg.includes ("totally useless merlin")) {
-            return message.channel.send ("Well, I'm mostly just here to look pretty and, you know.");
         }
 
         if(msg.startsWith ("good night merlin")) {
