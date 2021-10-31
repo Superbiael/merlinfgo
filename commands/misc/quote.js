@@ -34,8 +34,8 @@ module.exports = {
            case 25: message.channel.send ("Don't panic, don't panic. You'll bite your tongue over the incantations."); break;
            case 26: message.channel.send ("Oh, I do wonder… the age of Gods is long past, and with what is soon to unfold, so too will the age of the Fae end. It is age of Man – and that will also reach its eventual conclusion.\nThe day will come when this star of ours ceases to rotate, after which we will establish ourselves in the heavens, beginning the age of the Will.\nThose incapable of volition without a frame of fresh and blood will be left behind in time. And yet… I wonder why I find myself so often mingled with humanity."); break;
            case 27: message.channel.send ("I survive by eating dreams, and while I love to see reveries of hope and joy, nightmares are both easier to find and much more filling.\nIt is far more difficult to subsist on the former – not to mention certainly raising the hurdle for the dreamer here we are.");break;
-           case 28: message.channel.send ("Good things come to those who wait! One step forward, and two steps  back!"); break;
-           case 29: message.channel.send ("You know how they say.... Something, somethjing... \"helping other...\" Yeah! It's good... I think"); break;
+           case 28: message.channel.send ("Good things come to those who wait! One step forward, and two steps back!"); break;
+           case 29: message.channel.send ("You know how they say.... Something, something... \"helping other...\" Yeah! It's good... I think"); break;
            case 30: message.channel.send ("You can call me \"The Amazing Merlin the Great.\""); break;
         //    case 31: message.channel.send (""); break;
         //    case 32: message.channel.send (""); break;
