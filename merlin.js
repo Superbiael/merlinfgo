@@ -75,12 +75,13 @@ client.on("message", async message => {
         }
 
         if(msg.startsWith ("good night merlin")) {
-            number = 3;
+            number = 4;
             var random = Math.floor (Math.random() * (number)) + 1;
             switch (random) {
             case 1: message.channel.send ("Are you tired? Then, rest well and have a sweet dream~"); break;
             case 2: message.channel.send ("Good night, sweet dreams. Humans need to have time to see beautiful dreams."); break;
-             case 3: message.channel.send ("Good night, sweet dreams. As you are someone's happy song, I'll dedicate a higiri flower to your dream."); break;
+            case 3: message.channel.send ("Good night, sweet dreams. As you are someone's happy song, I'll dedicate a higiri flower to your dream."); break;
+            case 4: message.channel.send ("Good night, my master. For tonight, I shall paint you a lovely dream~"); break;
            }
         }
 
